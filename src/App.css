@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Acumin";
+  src: url("/fonts/AcuminVariableConcept.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AmazDooM";
+  src: url("/fonts/AmazDooMLeft.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("/fonts/NotoSansJP-Black.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)),
+    url("/imgs/BG.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Acumin", sans-serif;
+}

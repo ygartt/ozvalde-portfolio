@@ -1,0 +1,225 @@
+.about-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  will-change: clip-path;
+}
+
+.layer-1 {
+  z-index: 1;
+}
+
+.layer-2 {
+  z-index: 2;
+  clip-path: inset(100% 0% 0% 0%);
+}
+
+.layer-3 {
+  z-index: 3;
+  clip-path: inset(100% 0% 0% 0%);
+}
+
+.about-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.empty-band {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+}
+
+.empty-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.col-left {
+  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.empty-top-box {
+  width: 100%;
+  height: 33%;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.empty-bottom-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.assil-title {
+  font-family: "AmazDooM", sans-serif;
+  color: red;
+  font-size: 23vh;
+  font-weight: 100;
+  margin-top: 7%;
+  white-space: nowrap;
+}
+
+.about-desc-text {
+  font-family: "Acumin", sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 10px;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.6;
+  padding: 14%;
+  padding-top: 7%;
+  padding-bottom: 4%;
+}
+
+.about-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 14% 14% 14%;
+  gap: 15px;
+}
+
+.about-info-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  width: fit-content;
+}
+
+.about-info-text {
+  font-family: "Acumin", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 12px;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.about-info-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 33%;
+  height: 0.5px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.about-info-link:hover .about-info-text::after {
+  width: 77%;
+}
+
+.about-info-icon {
+  width: 16px;
+  height: 16px;
+  color: white;
+  transition: transform 0.3s ease;
+  transform: translate(3px, -3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-info-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.right-content-wrapper {
+  padding: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 100%;
+  gap: 6vh;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.info-title {
+  font-family: "AmazDooM", sans-serif;
+  color: white;
+  font-size: 4vh;
+  font-weight: 100;
+  margin: 0;
+}
+
+.info-desc {
+  font-family: "Acumin", sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 10px;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .empty-band {
+    grid-template-columns: 100vw;
+    height: auto;
+  }
+
+  .col-left {
+    border-right: none;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .empty-top-box {
+    height: 25vh;
+  }
+
+  .assil-title {
+    font-size: 9vh;
+    margin-top: 0;
+  }
+
+  .about-links-wrapper {
+    margin-top: 8%;
+  }
+
+  .about-info-text {
+    font-size: 9px;
+  }
+
+  .about-links-wrapper a:last-child .about-info-text {
+    font-size: 11px;
+  }
+
+  .about-info-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+}

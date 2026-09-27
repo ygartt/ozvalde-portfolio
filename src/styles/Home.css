@@ -1,0 +1,163 @@
+.scroll-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-container {
+  width: max-content;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 31vw 31vw 31vw 7vw 93vw;
+  will-change: transform;
+}
+
+.home-col {
+  height: 100vh;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-col:last-child {
+  border-right: none;
+}
+
+.text-col {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.vertical-text-container {
+  position: relative;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.text-eng {
+  font-family: "AmazDooM", sans-serif;
+  color: white;
+  margin-top: 10%;
+  font-size: 33vh;
+}
+
+.text-jap {
+  font-family: "NotoSansJP", sans-serif;
+  color: red;
+  font-size: 11vh;
+  position: absolute;
+  margin-bottom: 9%;
+  letter-spacing: 1vh;
+}
+
+.top-box {
+  height: auto;
+  min-height: 12vh;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-title {
+  font-family: "AmazDooM", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 5vh;
+  white-space: nowrap;
+  margin-top: 4%;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 33%;
+  object-fit: contain;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-half {
+  flex: 1;
+}
+
+.top-half {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.pic-box {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pic {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.desc-box {
+  display: flex;
+  justify-content: center;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.desc-text {
+  font-family: "Acumin", sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 10px;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.6;
+  padding: 7%;
+}
+
+@media screen and (max-width: 991px) {
+  .home-container {
+    grid-template-columns: 55vh 55vh 55vh 12vh 165vh;
+  }
+
+  .text-eng {
+    margin-top: 0;
+    font-size: 20vh;
+  }
+
+  .text-jap {
+    margin-bottom: 17%;
+    font-size: 7vh;
+  }
+
+  .desc-text {
+    font-size: 9px;
+  }
+}
