@@ -18,7 +18,7 @@ function Intro({ onComplete }) {
       { opacity: 1, duration: 2, ease: "power2.inOut" },
     )
       .to(
-        ".intro-bg-white",
+        ".intro-bg-red",
         {
           y: "0%",
           duration: 0.8,
@@ -38,7 +38,7 @@ function Intro({ onComplete }) {
       <div className="intro-bg-black">
         <img src="/imgs/icon.png" alt="Logo" className="intro-logo" />
       </div>
-      <div className="intro-bg-white"></div>
+      <div className="intro-bg-red"></div>
     </div>
   );
 }
