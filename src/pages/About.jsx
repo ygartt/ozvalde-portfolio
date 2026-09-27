@@ -130,7 +130,7 @@ const About = () => {
       <section className="about-section" ref={sectionRef}>
         <div className="about-layer layer-1">
           <img
-            src={isMobile ? "/imgs/08.jpeg" : "/imgs/5.jpeg"}
+            src={isMobile ? "/imgs/8.webp" : "/imgs/5.jpeg"}
             alt="pic 5"
             className="about-pic"
           />
@@ -138,7 +138,7 @@ const About = () => {
 
         <div className="about-layer layer-2" ref={slide2Ref}>
           <img
-            src={isMobile ? "/imgs/09.jpeg" : "/imgs/6.jpeg"}
+            src={isMobile ? "/imgs/9.webp" : "/imgs/6.jpeg"}
             alt="pic 6"
             className="about-pic"
           />
@@ -146,7 +146,7 @@ const About = () => {
 
         <div className="about-layer layer-3" ref={slide3Ref}>
           <img
-            src={isMobile ? "/imgs/010.jpeg" : "/imgs/7.jpeg"}
+            src={isMobile ? "/imgs/10.webp" : "/imgs/7.jpeg"}
             alt="pic 7"
             className="about-pic"
           />

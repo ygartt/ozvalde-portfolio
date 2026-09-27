@@ -109,3 +109,9 @@
   transition: transform 0.3s ease;
   transform: translate(3px, -3px);
 }
+
+@media screen and (max-width: 991px) {
+  .demo-text {
+    font-size: 15px;
+  }
+}
